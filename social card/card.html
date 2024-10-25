@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            margin: 200px auto;
+            /* border: 1px solid black; */
+            position: relative;
+            
+            &::after{
+                content: '';
+                width: 20px;
+                height: 20px;
+                background-color: whitesmoke;
+                border: 1px solid gray;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 3%;
+                right: 3%;
+                box-shadow: inset 0 0 1px 1px;
+            }
+            >div{
+                height: 100%;
+                width: 100%;
+                /* background-color: aqua; */
+                position: absolute;
+                top: 0;left: 0;
+                border-radius: 5px;
+                transform-origin: 95% 95%;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                transition: .5s;
+                text-align: center;
+                box-shadow: 0 0 1px 1px rgba(18, 18, 18, 0.488);
+                &:hover ~ div{
+                        
+                        transform: rotateZ(100deg);
+
+                    
+                }
+                &:nth-of-type(1){
+                    transform: rotateZ(-15deg);
+                    background-image: linear-gradient(45deg, rgb(65, 3, 83), rgb(182, 11, 229));
+                    font-size: 25px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-shadow: 2px 2px rgb(60, 12, 88);
+                   
+                }
+                &:nth-of-type(2){
+                    transform: rotateZ(-5deg);
+                    background-image: linear-gradient(45deg, rgb(5, 61, 12), rgb(20, 189, 40));
+                    font-size: 30px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-shadow: 2px 2px rgb(4, 58, 13);
+                }
+                &:nth-of-type(3){
+                    transform: rotateZ(5deg);
+                    background-image: linear-gradient(45deg, rgb(4, 31, 68), rgb(11, 116, 229));
+                    font-size: 18px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-shadow: 2px 2px rgb(12, 46, 88);
+                   
+                }
+                &:nth-of-type(4){
+                    transform: rotateZ(15deg);
+                    background-image: linear-gradient(45deg, rgb(97, 97, 13), rgb(221, 236, 22));
+                    font-size: 30px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-shadow: 2px 2px rgb(138, 125, 6);
+                }
+                &:nth-of-type(5){
+                    transform: rotateZ(25deg);
+                    background-image: linear-gradient(45deg, rgb(83, 3, 3), rgb(225, 44, 44));
+                    font-size: 30px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-shadow: 2px 2px rgb(88, 12, 12);
+                    
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div><i class="icon-heart"></i>Parsa Ghorbanian</div>
+        <div><i class="icon-github-fill"></i>Shayanj121</div>
+        <div><i class=" icon-mail-fill"></i>shayanjamali131@gmail.com</div>
+        <div><i class="icon-instagram-fill"></i>shayan.jcc</div>
+        <div class="name"><i class="icon-pencil-fill"></i> Shayan Jamali</div>
+    </div>
+</body>
+</html>
